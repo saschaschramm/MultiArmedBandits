@@ -37,6 +37,8 @@
 		5C4600722075365000E1A464 /* Bandit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bandit.swift; sourceTree = "<group>"; };
 		5C4600742075366200E1A464 /* GradientAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAlgorithm.swift; sourceTree = "<group>"; };
 		5C4600762075369D00E1A464 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5C460078207536CA00E1A464 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C460079207536E800E1A464 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 		5C460051207535DA00E1A464 = {
 			isa = PBXGroup;
 			children = (
+				5C460079207536E800E1A464 /* .gitignore */,
+				5C460078207536CA00E1A464 /* README.md */,
 				5C46005C207535DA00E1A464 /* MultiArmedBandits */,
 				5C4600692075360E00E1A464 /* MultiArmedBanditsTests */,
 				5C46005B207535DA00E1A464 /* Products */,
