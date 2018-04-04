@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5C46005E207535DA00E1A464 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46005D207535DA00E1A464 /* main.swift */; };
+		5C46006B2075360E00E1A464 /* MultiArmedBanditsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46006A2075360E00E1A464 /* MultiArmedBanditsTests.swift */; };
+		5C4600712075364200E1A464 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600702075364200E1A464 /* Random.swift */; };
+		5C4600732075365000E1A464 /* Bandit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600722075365000E1A464 /* Bandit.swift */; };
+		5C4600752075366200E1A464 /* GradientAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600742075366200E1A464 /* GradientAlgorithm.swift */; };
+		5C4600772075369D00E1A464 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600762075369D00E1A464 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,24 @@
 /* Begin PBXFileReference section */
 		5C46005A207535DA00E1A464 /* MultiArmedBandits */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MultiArmedBandits; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C46005D207535DA00E1A464 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5C4600682075360E00E1A464 /* MultiArmedBanditsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiArmedBanditsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C46006A2075360E00E1A464 /* MultiArmedBanditsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiArmedBanditsTests.swift; sourceTree = "<group>"; };
+		5C46006C2075360E00E1A464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4600702075364200E1A464 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		5C4600722075365000E1A464 /* Bandit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bandit.swift; sourceTree = "<group>"; };
+		5C4600742075366200E1A464 /* GradientAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAlgorithm.swift; sourceTree = "<group>"; };
+		5C4600762075369D00E1A464 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5C460057207535DA00E1A464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4600652075360E00E1A464 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				5C46005C207535DA00E1A464 /* MultiArmedBandits */,
+				5C4600692075360E00E1A464 /* MultiArmedBanditsTests */,
 				5C46005B207535DA00E1A464 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				5C46005A207535DA00E1A464 /* MultiArmedBandits */,
+				5C4600682075360E00E1A464 /* MultiArmedBanditsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +79,21 @@
 			isa = PBXGroup;
 			children = (
 				5C46005D207535DA00E1A464 /* main.swift */,
+				5C4600702075364200E1A464 /* Random.swift */,
+				5C4600722075365000E1A464 /* Bandit.swift */,
+				5C4600742075366200E1A464 /* GradientAlgorithm.swift */,
+				5C4600762075369D00E1A464 /* Utilities.swift */,
 			);
 			path = MultiArmedBandits;
+			sourceTree = "<group>";
+		};
+		5C4600692075360E00E1A464 /* MultiArmedBanditsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C46006A2075360E00E1A464 /* MultiArmedBanditsTests.swift */,
+				5C46006C2075360E00E1A464 /* Info.plist */,
+			);
+			path = MultiArmedBanditsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,23 @@
 			productReference = 5C46005A207535DA00E1A464 /* MultiArmedBandits */;
 			productType = "com.apple.product-type.tool";
 		};
+		5C4600672075360E00E1A464 /* MultiArmedBanditsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C46006D2075360E00E1A464 /* Build configuration list for PBXNativeTarget "MultiArmedBanditsTests" */;
+			buildPhases = (
+				5C4600642075360E00E1A464 /* Sources */,
+				5C4600652075360E00E1A464 /* Frameworks */,
+				5C4600662075360E00E1A464 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiArmedBanditsTests;
+			productName = MultiArmedBanditsTests;
+			productReference = 5C4600682075360E00E1A464 /* MultiArmedBanditsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +144,9 @@
 				ORGANIZATIONNAME = "Sascha Schramm";
 				TargetAttributes = {
 					5C460059207535DA00E1A464 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5C4600672075360E00E1A464 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -110,16 +164,39 @@
 			projectRoot = "";
 			targets = (
 				5C460059207535DA00E1A464 /* MultiArmedBandits */,
+				5C4600672075360E00E1A464 /* MultiArmedBanditsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C4600662075360E00E1A464 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C460056207535DA00E1A464 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4600712075364200E1A464 /* Random.swift in Sources */,
 				5C46005E207535DA00E1A464 /* main.swift in Sources */,
+				5C4600732075365000E1A464 /* Bandit.swift in Sources */,
+				5C4600772075369D00E1A464 /* Utilities.swift in Sources */,
+				5C4600752075366200E1A464 /* GradientAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4600642075360E00E1A464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C46006B2075360E00E1A464 /* MultiArmedBanditsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +334,40 @@
 			};
 			name = Release;
 		};
+		5C46006E2075360E00E1A464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MultiArmedBanditsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saschaschramm.MultiArmedBanditsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		5C46006F2075360E00E1A464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MultiArmedBanditsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saschaschramm.MultiArmedBanditsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +385,15 @@
 			buildConfigurations = (
 				5C460062207535DA00E1A464 /* Debug */,
 				5C460063207535DA00E1A464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C46006D2075360E00E1A464 /* Build configuration list for PBXNativeTarget "MultiArmedBanditsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C46006E2075360E00E1A464 /* Debug */,
+				5C46006F2075360E00E1A464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
