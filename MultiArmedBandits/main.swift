@@ -29,30 +29,12 @@ func runGradientAlgorithm() {
     }
     
     let end = DispatchTime.now()
-    
     let time = Double(end.uptimeNanoseconds - start.uptimeNanoseconds)/Double(1_000_000_000)
-    
     print(time)
 }
 
 
-//convex()
 
-approximatingDerivatives()
-
-
-/*
-func runTest() {
-    
-    var bla = [Int](repeating: 0, count: 1)
-    foo(steps: 1, count: &bla)
-}
-runTest()*/
-
-
-
-
-//runGradientAlgorithm()
-//expectedReward()
+runGradientAlgorithm()
 
 
