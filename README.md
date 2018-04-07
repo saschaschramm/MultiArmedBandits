@@ -1,7 +1,5 @@
 #  Multi-armed Bandit Problem
 
-https://arxiv.org/pdf/1204.5721.pdf !!!!!!!!!
-
 ## Introduction
 
 The multi-armed bandit problem is a sequential allocation problem. An agent must repeatedly choose among different actions. For every choosen action the agent receives a reward. The goal is to maximize the expected total reward obtained in a sequence of actions:
@@ -25,8 +23,6 @@ Initially all preferences are the same:
 ```swift
 var preference = [Double](repeating: 0, count: actionSpace)
 ```
-
-
 After selecting an action and receiving a reward the preferences are updated:
 ```swift
 for i in 0 ..< actionSpace {
