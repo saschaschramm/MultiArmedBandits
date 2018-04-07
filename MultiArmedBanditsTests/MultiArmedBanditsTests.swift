@@ -20,9 +20,39 @@ class MultiArmedBanditsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testChoose() {
+        let steps = 100000
+        var total = [Double](repeating: 0, count: 4)
+        let probs = [0.1, 0.2, 0.3, 0.4]
+        
+        for _ in 0 ..< steps {
+            let random = randChoice(probs)
+            total[random] += 1.0
+        }
+        
+        for i in 0 ..< total.count {
+            let probEstimation = Double(total[i])/Double(steps)
+            XCTAssertEqual(probs[i], probEstimation, accuracy: 0.01)
+        }
+    }
+    
+    func testRandomNormal() {
+        let steps = 100000
+        let mean = 0.2
+        var total = 0.0
+        
+        for _ in 0 ..< steps {
+            let random = randNormal(mean, deviation: 1.0)
+            total += random
+        }
+        
+        let meanEstimation = total/Double(steps)
+        XCTAssertEqual(mean, meanEstimation, accuracy: 0.01)
+    }
+    
+    func testSoftmax() {
+        XCTAssertEqual(softmax([1,2,3]), [0.090030573170380462, 0.24472847105479764, 0.66524095577482178])
+        XCTAssertEqual(softmax([1000,2000,3000]), [0.0, 0.0, 1.0])
     }
     
     func testPerformanceExample() {

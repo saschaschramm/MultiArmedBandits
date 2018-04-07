@@ -23,4 +23,8 @@ class Bandit {
         return randNormal(meanRewards[action], deviation: 1.0)
     }
     
+    func optimalPolicy(_ action: Int) -> Double {
+        return meanRewards[action]
+    }
+    
 }

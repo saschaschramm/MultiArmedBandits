@@ -13,6 +13,12 @@
 		5C4600732075365000E1A464 /* Bandit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600722075365000E1A464 /* Bandit.swift */; };
 		5C4600752075366200E1A464 /* GradientAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600742075366200E1A464 /* GradientAlgorithm.swift */; };
 		5C4600772075369D00E1A464 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600762075369D00E1A464 /* Utilities.swift */; };
+		5C46007C2075592900E1A464 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46007B2075592900E1A464 /* Foo.swift */; };
+		5C46007E207559F100E1A464 /* Exact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46007D207559F100E1A464 /* Exact.swift */; };
+		5C4600802078D52500E1A464 /* NumericalDifferentiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46007F2078D52500E1A464 /* NumericalDifferentiation.swift */; };
+		5C46009620792C7300E1A464 /* BanditConvexOptimization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C46009520792C7300E1A464 /* BanditConvexOptimization.swift */; };
+		5C46009720792DE600E1A464 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600702075364200E1A464 /* Random.swift */; };
+		5C46009820792DFA00E1A464 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4600762075369D00E1A464 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +45,10 @@
 		5C4600762075369D00E1A464 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5C460078207536CA00E1A464 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C460079207536E800E1A464 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5C46007B2075592900E1A464 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		5C46007D207559F100E1A464 /* Exact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exact.swift; sourceTree = "<group>"; };
+		5C46007F2078D52500E1A464 /* NumericalDifferentiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalDifferentiation.swift; sourceTree = "<group>"; };
+		5C46009520792C7300E1A464 /* BanditConvexOptimization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanditConvexOptimization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		5C460051207535DA00E1A464 = {
 			isa = PBXGroup;
 			children = (
+				5C46007A2075591000E1A464 /* Test */,
 				5C460079207536E800E1A464 /* .gitignore */,
 				5C460078207536CA00E1A464 /* README.md */,
 				5C46005C207535DA00E1A464 /* MultiArmedBandits */,
@@ -98,6 +109,17 @@
 				5C46006C2075360E00E1A464 /* Info.plist */,
 			);
 			path = MultiArmedBanditsTests;
+			sourceTree = "<group>";
+		};
+		5C46007A2075591000E1A464 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				5C46007D207559F100E1A464 /* Exact.swift */,
+				5C46007B2075592900E1A464 /* Foo.swift */,
+				5C46007F2078D52500E1A464 /* NumericalDifferentiation.swift */,
+				5C46009520792C7300E1A464 /* BanditConvexOptimization.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,9 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4600712075364200E1A464 /* Random.swift in Sources */,
+				5C46007E207559F100E1A464 /* Exact.swift in Sources */,
+				5C4600802078D52500E1A464 /* NumericalDifferentiation.swift in Sources */,
 				5C46005E207535DA00E1A464 /* main.swift in Sources */,
+				5C46009620792C7300E1A464 /* BanditConvexOptimization.swift in Sources */,
 				5C4600732075365000E1A464 /* Bandit.swift in Sources */,
 				5C4600772075369D00E1A464 /* Utilities.swift in Sources */,
+				5C46007C2075592900E1A464 /* Foo.swift in Sources */,
 				5C4600752075366200E1A464 /* GradientAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C46009820792DFA00E1A464 /* Utilities.swift in Sources */,
+				5C46009720792DE600E1A464 /* Random.swift in Sources */,
 				5C46006B2075360E00E1A464 /* MultiArmedBanditsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

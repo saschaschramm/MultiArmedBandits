@@ -1,5 +1,5 @@
 //
-//  GradientAlgorithm.swift
+//  Foo.swift
 //  MultiArmedBandits
 //
 //  Created by Sascha Schramm on 04.04.18.
@@ -9,7 +9,13 @@
 import Foundation
 
 
-func gradientAlgorithm(steps: Int, count: inout [Int]) {
+// https://courses.cs.washington.edu/courses/cse599s/12sp/scribes/lecture12.pdf
+// https://arxiv.org/pdf/cs/0408007.pdf
+
+
+
+/*
+func foo(steps: Int, count: inout [Int]) {
     
     let bandit = Bandit()
     let actionSpace = bandit.actionSpace
@@ -18,8 +24,22 @@ func gradientAlgorithm(steps: Int, count: inout [Int]) {
     let learningRate = 1.0
     
     var policy = [Double](repeating: 1.0/Double(actionSpace), count: actionSpace)
-    var preference = [Double](repeating: 0, count: actionSpace)
+    var w = [Double](repeating: 1.0/Double(actionSpace), count: actionSpace)
     
+    for t in 1 ... steps {
+        
+        let expert = randChoice(w)
+        
+        print("expert ", expert)
+
+        
+        
+    }
+
+    
+    
+    
+    /*
     for t in 1 ... steps {
         let action = randChoice(policy)
         let reward = bandit.step(action)
@@ -28,16 +48,16 @@ func gradientAlgorithm(steps: Int, count: inout [Int]) {
         
         for i in 0 ..< actionSpace {
             if  i != action {
-                preference[i] -= learningRate * reward * policy[i]
+                w[i] -= learningRate * reward * policy[i]
             } else {
-                preference[i] += learningRate * reward * (1 - policy[i])
+                w[i] += learningRate * reward * (1 - policy[i])
             }
         }
         
-        policy = softmax(preference)
+        policy = softmax(w)
         
         if action == bandit.optimalAction {
             count[t-1] += 1
         }
-    }
-}
+    }*/
+}*/

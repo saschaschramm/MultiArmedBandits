@@ -8,7 +8,12 @@
 
 import Foundation
 
+
+
 func runGradientAlgorithm() {
+    
+    let start = DispatchTime.now()
+    
     let steps = 1000
     let runs = 2000
     var optimalActionCount = [Int](repeating: 0, count: steps)
@@ -22,6 +27,32 @@ func runGradientAlgorithm() {
             print(String(format: "%i: %f", i, Double(optimalActionCount[i])/Double(runs)))
         }
     }
+    
+    let end = DispatchTime.now()
+    
+    let time = Double(end.uptimeNanoseconds - start.uptimeNanoseconds)/Double(1_000_000_000)
+    
+    print(time)
 }
 
-runGradientAlgorithm()
+
+//convex()
+
+approximatingDerivatives()
+
+
+/*
+func runTest() {
+    
+    var bla = [Int](repeating: 0, count: 1)
+    foo(steps: 1, count: &bla)
+}
+runTest()*/
+
+
+
+
+//runGradientAlgorithm()
+//expectedReward()
+
+
